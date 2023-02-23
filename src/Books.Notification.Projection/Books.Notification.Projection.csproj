@@ -7,4 +7,14 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Consumers\Book" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
+      <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.0" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
+    </ItemGroup>
+
 </Project>

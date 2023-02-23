@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Notification.Projection", "src\Books.Notification.Projection\Books.Notification.Projection.csproj", "{8F9E5400-DD97-4A69-A310-8F8E69E674CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Events", "src\Books.Events\Books.Events.csproj", "{7F21C315-7C06-4842-8028-649ED2516B54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{8F9E5400-DD97-4A69-A310-8F8E69E674CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9E5400-DD97-4A69-A310-8F8E69E674CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9E5400-DD97-4A69-A310-8F8E69E674CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F21C315-7C06-4842-8028-649ED2516B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F21C315-7C06-4842-8028-649ED2516B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F21C315-7C06-4842-8028-649ED2516B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F21C315-7C06-4842-8028-649ED2516B54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
