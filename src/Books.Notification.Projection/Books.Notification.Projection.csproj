@@ -11,10 +11,23 @@
       <PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
       <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.0" />
       <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Books.Events\Books.Events.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.dev.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="appsettings.prod.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="appsettings.qa.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>
