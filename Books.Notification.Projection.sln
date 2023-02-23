@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Notification.Projecti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Events", "src\Book.Events\Book.Events.csproj", "{7F21C315-7C06-4842-8028-649ED2516B54}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD02143E-0BBE-4E56-AC3C-916DD7A3B6A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{7F21C315-7C06-4842-8028-649ED2516B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F21C315-7C06-4842-8028-649ED2516B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F21C315-7C06-4842-8028-649ED2516B54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F21C315-7C06-4842-8028-649ED2516B54} = {BD02143E-0BBE-4E56-AC3C-916DD7A3B6A6}
+		{8F9E5400-DD97-4A69-A310-8F8E69E674CD} = {BD02143E-0BBE-4E56-AC3C-916DD7A3B6A6}
 	EndGlobalSection
 EndGlobal
