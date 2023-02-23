@@ -1,4 +1,4 @@
-﻿namespace Books.Events.Abstract.Base;
+﻿namespace Book.Events.Abstract.Base;
 
 public interface IEvent
 {

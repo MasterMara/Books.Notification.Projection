@@ -1,4 +1,4 @@
-﻿namespace Books.Events.V1.Book.Props;
+﻿namespace Book.Events.V1.Book.Props;
 
 public class Writer
 {

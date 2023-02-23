@@ -1,8 +1,8 @@
-﻿using Books.Events.Abstract;
-using Books.Events.Common;
-using Books.Events.V1.Book.Props;
+﻿using Book.Events.Abstract;
+using Book.Events.Common;
+using Book.Events.V1.Book.Props;
 
-namespace Books.Events.V1.Book;
+namespace Book.Events.V1.Book;
 
 public class Created : IBookEvent
 {

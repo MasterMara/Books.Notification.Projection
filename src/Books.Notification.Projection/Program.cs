@@ -1,4 +1,4 @@
-﻿using Books.Events.V1.Book;
+﻿using Book.Events.V1.Book;
 using Books.Notification.Projection.Consumers.Book;
 using Books.Notification.Projection.Handlers;
 using Books.Notification.Projection.Logging;

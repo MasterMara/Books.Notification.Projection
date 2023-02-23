@@ -1,4 +1,4 @@
-﻿namespace Books.Events.Common;
+﻿namespace Book.Events.Common;
 
 public class Money
 {

@@ -1,6 +1,6 @@
-﻿using Books.Events.Abstract.Base;
+﻿using Book.Events.Abstract.Base;
 
-namespace Books.Events.Abstract;
+namespace Book.Events.Abstract;
 
 public interface IBookEvent : IEvent
 {

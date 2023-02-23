@@ -1,4 +1,4 @@
-﻿namespace Books.Events.Shared;
+﻿namespace Book.Events.Shared;
 
 public class EventHeader
 {
