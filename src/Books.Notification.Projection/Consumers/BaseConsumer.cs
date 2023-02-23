@@ -2,12 +2,15 @@
 
 namespace Books.Notification.Projection.Consumers;
 
-public class BaseConsumer<TMessage> : IConsumer<TMessage> where TMessage : class
+public abstract class BaseConsumer<TMessage> : IConsumer<TMessage> where TMessage : class
 {
-    
-    
-    public Task Consume(ConsumeContext<TMessage> context)
+    protected abstract Task Consume(TMessage context, ConsumeContext consumeContext);
+    public async Task Consume(ConsumeContext<TMessage> context)
     {
-        throw new NotImplementedException();
+        context.SetConsumeActivityId();
+
+        context.TryGetPayload(out ConsumeContext consumeContext);
+
+        await Consume(context.Message, consumeContext);
     }
 }
