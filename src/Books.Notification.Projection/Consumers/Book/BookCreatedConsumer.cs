@@ -16,10 +16,11 @@ public class BookCreatedConsumer : BaseConsumer<Created>
     
     protected override async Task Consume(Created message, ConsumeContext consumeContext)
     {
-        _consoleLogger.LogInformation($"Book:Created Consumer Started for BookNumber:{message.BookNumber}");
+        Console.WriteLine(message.BookNumber);
+       // _consoleLogger.LogInformation($"Book:Created Consumer Started for BookNumber:{message.BookNumber}");
         
         //Todo: Go DomainService for Event Notification
-        _consoleLogger.LogInformation($"Book:Created Consumer Started for BookNumber:{message.BookNumber}");
+        //_consoleLogger.LogInformation($"Book:Created Consumer Started for BookNumber:{message.BookNumber}");
 
         return;
     }
