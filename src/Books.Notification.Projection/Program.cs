@@ -72,6 +72,67 @@ public static class Program
                                 new BookCreatedConsumer(serviceProvider.GetService<IConsoleLogger>()!
                                 ));
                         });
+                        
+                        cfg.ReceiveEndpoint("Events.V1.Book:Placed", ec =>
+                        {
+                            ec.ConfigureConsumeTopology = false;
+
+                            ec.Bind<Created>(x =>
+                            {
+                                x.ExchangeType = ExchangeType.Topic;
+                                x.RoutingKey = "Book.*";
+                            });
+
+                            ec.Consumer(() =>
+                                new BookPlacedConsumer(serviceProvider.GetService<IConsoleLogger>()!
+                                ));
+                        });
+                        
+                        cfg.ReceiveEndpoint("Events.V1.Book:Printed", ec =>
+                        {
+                            ec.ConfigureConsumeTopology = false;
+
+                            ec.Bind<Created>(x =>
+                            {
+                                x.ExchangeType = ExchangeType.Topic;
+                                x.RoutingKey = "Book.*";
+                            });
+
+                            ec.Consumer(() =>
+                                new BookPrintedConsumer(serviceProvider.GetService<IConsoleLogger>()!
+                                ));
+                        });
+                        
+                        cfg.ReceiveEndpoint("Events.V1.Book:Deleted", ec =>
+                        {
+                            ec.ConfigureConsumeTopology = false;
+
+                            ec.Bind<Created>(x =>
+                            {
+                                x.ExchangeType = ExchangeType.Topic;
+                                x.RoutingKey = "Book.*";
+                            });
+
+                            ec.Consumer(() =>
+                                new BookDeletedConsumer(serviceProvider.GetService<IConsoleLogger>()!
+                                ));
+                        });
+                        
+                        cfg.ReceiveEndpoint("Events.V1.Book:Published", ec =>
+                        {
+                            ec.ConfigureConsumeTopology = false;
+
+                            ec.Bind<Created>(x =>
+                            {
+                                x.ExchangeType = ExchangeType.Topic;
+                                x.RoutingKey = "Book.*";
+                            });
+
+                            ec.Consumer(() =>
+                                new BookPublishedConsumer(serviceProvider.GetService<IConsoleLogger>()!
+                                ));
+                        });
+                        
 
                         #endregion
                     });
