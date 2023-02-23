@@ -77,7 +77,7 @@ public static class Program
                         {
                             ec.ConfigureConsumeTopology = false;
 
-                            ec.Bind<Created>(x =>
+                            ec.Bind<Placed>(x =>
                             {
                                 x.ExchangeType = ExchangeType.Topic;
                                 x.RoutingKey = "Book.*";
@@ -92,7 +92,7 @@ public static class Program
                         {
                             ec.ConfigureConsumeTopology = false;
 
-                            ec.Bind<Created>(x =>
+                            ec.Bind<Printed>(x =>
                             {
                                 x.ExchangeType = ExchangeType.Topic;
                                 x.RoutingKey = "Book.*";
@@ -107,7 +107,7 @@ public static class Program
                         {
                             ec.ConfigureConsumeTopology = false;
 
-                            ec.Bind<Created>(x =>
+                            ec.Bind<Deleted>(x =>
                             {
                                 x.ExchangeType = ExchangeType.Topic;
                                 x.RoutingKey = "Book.*";
@@ -122,7 +122,7 @@ public static class Program
                         {
                             ec.ConfigureConsumeTopology = false;
 
-                            ec.Bind<Created>(x =>
+                            ec.Bind<Published>(x =>
                             {
                                 x.ExchangeType = ExchangeType.Topic;
                                 x.RoutingKey = "Book.*";
